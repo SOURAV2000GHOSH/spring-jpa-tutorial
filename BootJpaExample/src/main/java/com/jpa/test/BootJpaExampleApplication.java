@@ -15,8 +15,8 @@ public class BootJpaExampleApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(BootJpaExampleApplication.class, args);
 		
-		UserRepository repository= context.getBean(UserRepository.class);
-		
+//		UserRepository repository= context.getBean(UserRepository.class);
+//		
 //		User user=new User();
 //		user.setName("Sourav Ghosh");
 //		user.setCity("Kharagpur");
@@ -25,10 +25,10 @@ public class BootJpaExampleApplication {
 //		User user2 = repository.save(user);
 //		
 //		System.out.println(user2);
-		
-		//example of @Query
-		List<User> userByName = repository.getUserByName("Sourav Ghosh");
-		userByName.forEach(user -> System.out.println(user));
+//		
+//		//example of @Query
+//		List<User> userByName = repository.getUserByName("Sourav Ghosh");
+//		userByName.forEach(user -> System.out.println(user));
 	}
 
 }
